@@ -6,7 +6,7 @@ const Addition = () => {
   return (
     <div className='operation-container'>
       <h2>Dodawanie</h2>
-      <Calculation />
+      <Calculation operation={'add'} />
     </div>
   )
 }
