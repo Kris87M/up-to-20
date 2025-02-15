@@ -1,13 +1,12 @@
 import React from 'react';
 import './RandomNumber.scss';
 
-const RandomNumber = () => {
-  let randomNumber = Math.floor(Math.random()*21);
+const RandomNumber = ({value}) => {
   return (
     <div className='randomNumber'>
-      {randomNumber}
+      {value}
     </div>
   )
 }
 
-export default RandomNumber
+export default RandomNumber;
