@@ -1,10 +1,11 @@
 import React from 'react';
+import Calculation from '../Calculation/Calculation'
 
 const Substraction = () => {
   return (
     <div className='operation-container'>
       <h2>Odejmowanie</h2>
-      <p>Tutaj możesz wykonywać odejmowanie.</p>
+      <Calculation operation={'substract'} />
     </div>
   )
 }
