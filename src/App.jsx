@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./components/Header/Header"
-import { BrowserRouter, Routes, Route } from "react-router";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router";
 import Addition from "./components/Addition/Addition";
 import Substraction from "./components/Substraction/Substraction";
 import Division from "./components/Division/Division";
@@ -15,6 +15,7 @@ const App = () => {
         <Route path="/substraction" element={<Substraction />} />
         <Route path="/division" element={<Division />} />
         <Route path="/multiplication" element={<Multiplication />} />
+        <Route path="*" element={<Navigate to="/addition" replace />} />
       </Routes>
     </BrowserRouter>
   );
