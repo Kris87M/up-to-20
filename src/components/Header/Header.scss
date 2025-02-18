@@ -1,9 +1,25 @@
 .header {
   display: flex;
-  justify-content: center;
-  background-color: cornflowerblue;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #27ae60;
   border: 2px solid ;
+  color: #fff;
+  // box-shadow: 0 8px 6px 0 #27ae60;
   
+  .logo {
+      display: inline-block;
+      font-size: 24px;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+  
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+
   ul {
     width: 60%;
     display: flex;
@@ -20,5 +36,6 @@
 
   ul, li, h3 {
     padding: 10px;
+    text-transform: uppercase;
   }
 }
